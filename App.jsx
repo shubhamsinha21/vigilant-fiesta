@@ -1,13 +1,7 @@
-import { View, Text, Image } from 'react-native'
-import React from 'react'
+import MyStack from "./navigation"
 
 export default function App() {
   return (
-    <View>
-      <Text>App</Text>
-      <Text>App</Text>
-      <Text>App</Text>
-
-    </View>
+    <MyStack />
   )
 }
