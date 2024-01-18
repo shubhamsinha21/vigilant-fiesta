@@ -1,4 +1,4 @@
-import { View, Text } from 'react-native'
+import { View, Text, Image } from 'react-native'
 import React from 'react'
 
 export default function App() {
@@ -7,6 +7,7 @@ export default function App() {
       <Text>App</Text>
       <Text>App</Text>
       <Text>App</Text>
+
     </View>
   )
 }
