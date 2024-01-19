@@ -1,4 +1,4 @@
-import { View, Text, Image, TouchableOpacity, StatusBar } from 'react-native'
+import { View, Text, Image, TouchableOpacity } from 'react-native'
 import { LinearGradient } from 'react-native-linear-gradient'
 import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-native-responsive-screen';
 

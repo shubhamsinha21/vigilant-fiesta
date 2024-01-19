@@ -31,7 +31,7 @@ export const categoriesData = [
     }
 ]
 
-export const destinations = [
+export const destinationsData = [
     {
         title: "Maldives",
         duration: "12 days",
@@ -68,7 +68,7 @@ export const destinations = [
         distance: "8,000 KM",
         price: 1500,
         weather: "16 C",
-        shortDescription: "Often referred to as “The Crossroads of the World,” Times Square is legendary for its annual New Year's Eve ball drop celebration.",
+        shortDescription: "Times Square is legendary for its annual New Year's Eve ball drop celebration",
         longDescription: "Often referred to as “The Crossroads of the World,” Times Square is legendary for its annual New Year's Eve ball drop celebration. “Times Square in the heart of New York City is synonymous with vibrant city life and dazzling billboards, making it a must-see for travelers.",
         image: require("../assets/destinations/square.jpg")
     }

@@ -15,7 +15,6 @@ export default function Category() {
 
             <ScrollView
                 horizontal
-                alwaysBounceVertical={true}
                 contentContainerStyle={{ paddingHorizontal: 10 }}
                 showsHorizontalScrollIndicator={false}
                 className="space-x-4"

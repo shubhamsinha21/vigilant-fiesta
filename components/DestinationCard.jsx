@@ -1,33 +1,17 @@
-import { destinationsData } from '../constants/constants'
-import { View } from 'react-native'
 import { Text, TouchableOpacity, Image } from 'react-native'
 import { LinearGradient } from 'react-native-linear-gradient'
 import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-native-responsive-screen';
 import { HeartIcon } from "react-native-heroicons/solid";
 import { useState } from 'react'
-// import DestinationCard from './DestinationCard'
 
-export default function Destination({ navigation }) {
-    return (
-        <View className="flex-row justify-around mx-4 flex-wrap">
-            {
-                destinationsData.map((destinations, index) => {
-                    return (
-                        <DestinationCard navigation={navigation} key={index} item={destinations} />
-                    )
-                })
-            }
-        </View>
-    )
-}
 
-function DestinationCard({ item, navigation }) {
+export default function DestinationCard({ item, navigation }) {
 
     const [isFavorite, setIsFavorite] = useState(false);
 
     return (
         <TouchableOpacity
-            onPress={() => navigation.navigate("Description")}
+            onPress={() => navigation.navigate("Destination")}
             style={{ width: wp(44), height: hp(40) }} className="flex justify-end p-4 py-6 mb-5 space-y-2 relative">
             <Image source={item.image} className="absolute rounded-3xl" style={{ width: wp(44), height: hp(40) }} />
             <LinearGradient

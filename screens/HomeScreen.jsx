@@ -4,7 +4,7 @@ import Category from '../components/Category';
 import SortCategory from '../components/SortCategory';
 import Destination from '../components/Destination';
 
-export default function HomeScreen() {
+export default function HomeScreen({ navigation }) {
     const ios = Platform.OS === 'ios';
     const topMargin = ios ? 'mt-3' : 'mt-4'
     return (
@@ -40,7 +40,7 @@ export default function HomeScreen() {
 
             {/* destinations */}
             <View className="mb-4">
-                <Destination />
+                <Destination navigation={navigation} />
             </View>
 
         </ScrollView>
