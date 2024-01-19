@@ -11,7 +11,7 @@ export default function DestinationCard({ item, navigation }) {
 
     return (
         <TouchableOpacity
-            onPress={() => navigation.navigate("Destination")}
+            onPress={() => navigation.navigate("Destination", { ...item })}
             style={{ width: wp(44), height: hp(40) }} className="flex justify-end p-4 py-6 mb-5 space-y-2 relative">
             <Image source={item.image} className="absolute rounded-3xl" style={{ width: wp(44), height: hp(40) }} />
             <LinearGradient
