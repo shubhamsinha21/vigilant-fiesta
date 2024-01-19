@@ -1,7 +1,8 @@
 import { View, Text, ScrollView, TouchableOpacity, Image, Platform, TextInput } from 'react-native'
 import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-native-responsive-screen';
 import Category from '../components/Category';
-
+import SortCategory from '../components/SortCategory';
+import Destination from '../components/Destination';
 
 export default function HomeScreen() {
     const ios = Platform.OS === 'ios';
@@ -31,6 +32,17 @@ export default function HomeScreen() {
             <View className="mb-4">
                 <Category />
             </View>
+
+            {/* sort-categories */}
+            <View className="mb-4">
+                <SortCategory />
+            </View>
+
+            {/* destinations */}
+            <View className="mb-4">
+                <Destination />
+            </View>
+
         </ScrollView>
     )
 }

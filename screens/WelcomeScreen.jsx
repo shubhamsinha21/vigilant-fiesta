@@ -12,7 +12,7 @@ export default function WelcomeScreen({ navigation }) {
                 {/* content */}
                 <View className="px-4 space-y-6 py-12">
                     <LinearGradient
-                        colors={["transparent", "rgba(255, 255, 255, 0.2)"]}
+                        colors={["transparent", "rgba(0, 0, 0, 0.2)"]}
                         style={{ width: wp(100), height: hp(60) }}
                         start={{ x: 0, y: 0 }}
                         end={{ x: 0.5, y: 1 }}
@@ -30,7 +30,6 @@ export default function WelcomeScreen({ navigation }) {
                     <TouchableOpacity onPress={() => navigation.navigate('Home')}>
                         <Text className="bg-white font-semibold text-black mx-auto p-3 px-8 rounded-full shadow-md shadow-white" style={{ fontSize: wp(6) }}>Let's go</Text>
                     </TouchableOpacity>
-
                 </View>
             </View>
         </>

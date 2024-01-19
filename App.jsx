@@ -1,7 +1,12 @@
 import MyStack from "./navigation"
+import { StatusBar } from "react-native"
 
 export default function App() {
   return (
-    <MyStack />
+    <>
+      <StatusBar hidden={true} />
+      <MyStack /></>
+
+
   )
 }
